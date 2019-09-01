@@ -6,3 +6,14 @@ KimJeongChul
  - *Personal Project 'Deep Learning Workload in Serverless Computing'*
  
 ### Data PreProcessing(image augmentation)
+ - Orchestrator
+ 
+    > Parallel Execution : Invoke Multiple 'image_augmentation' Lambda (Concurrent Execution) using MultiProcessing Library
+    
+ - Image Augmentation
+ 
+    > Download S3 File to tmp file-system which is only writable storage in Lambda
+    
+    > Augmentation Image file using Pillow Library(Image, ImageFilter)
+    
+    > Upload augmenated image to output bucket
