@@ -24,7 +24,9 @@ KimJeongChul
  
  - Image Classificaiton : SqueezeNet Model Prediction
  - example : Dog Pomeranian image
+ 
  ![dog](https://user-images.githubusercontent.com/10591350/64076271-a47da280-ccfd-11e9-9e4c-8f3e6c989eb9.jpg)
+ 
  - CloudWatch Lambda logs
  ```
 {
