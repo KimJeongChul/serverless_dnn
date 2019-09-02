@@ -5,7 +5,16 @@ KimJeongChul
  - UCI Global Research Project 'Stanford Parser Analyze Sentences and Tree Similarity'
  - *Personal Project 'Deep Learning Workload in Serverless Computing'*
  
+## Project
+Serverless Computing have shown advantages to efficiency and cost for data-intensive applications. Also training deep learning model can be data-intensive using compute and memory resources. I implemented deep learning workload using AWS Lambda in Amazon Web Service. 
+
+Proposing serverless computing architecture for deep learning workload by leveraging data parallelism.
+- Data Preprocessing: image augmentation (parallel execution)
+- Training Model: SqueezeNet model training (data parallelism - parallel execution)
+- Prediction Model: SqueezeNet model serving (image classification) 
+ 
 ### Data PreProcessing(image augmentation)
+<img width=400 src='https://user-images.githubusercontent.com/10591350/64114377-bf1c4e00-cdc7-11e9-9450-ecabcc0282c8.png'></img>
  - Orchestrator
  
     > Parallel Execution : Invoke Multiple 'image_augmentation' Lambda (Concurrent Execution) using MultiProcessing Library
@@ -16,11 +25,14 @@ KimJeongChul
     
     > Augmentation Image file using Pillow Library(Image, ImageFilter)
     
-    > Upload augmenated image to output bucket
- - example : ImageNet n02088632_419.JPEG    
-<img width= 600 src='https://user-images.githubusercontent.com/10591350/64076510-bf9de180-cd00-11e9-8546-13ba4121ebce.png'></img>
+    > Upload augmentated image to output bucket
+    
+ - example : ImageNet n02088632_419.JPEG
+     
+<img width=400 src='https://user-images.githubusercontent.com/10591350/64076510-bf9de180-cd00-11e9-8546-13ba4121ebce.png'></img>
     
 ### Model Training
+<img width=400 src='https://user-images.githubusercontent.com/10591350/64114519-22a67b80-cdc8-11e9-8400-282e7146d956.png'></img>
  - Orchestrator
  
  > Parallel Execution : Invoke Multiple 'image_augmentation' Lambda (Concurrent Execution) using MultiProcessing Library
