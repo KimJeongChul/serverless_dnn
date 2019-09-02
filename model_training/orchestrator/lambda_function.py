@@ -16,7 +16,7 @@ def invoke_lambda(object_input_bucket, label_input_bucket, model_bucket, model_o
             "object_key": object_key,
             "label_bucket": label_input_bucket,
             "label_key": object_key,
-            "model_bucket" : model_bucket,
+            "model_bucket": model_bucket,
             "model_object_key": model_object_key
 
         })
