@@ -2,8 +2,11 @@
 UROP in UC Irvine, LA, USA, December 2017 ~ February 2018
 
 KimJeongChul
- - UCI Global Research Project 'Stanford Parser Analyze Sentences and Tree Similarity'
- - *Personal Project 'Deep Learning Workload in Serverless Computing'*
+
+### UCI Global Research Project 
+
+ - Team Project 'Stanford Parser Analyze Sentences and Tree Similarity'
+ - *Term Project 'Deep Learning Workload in Serverless Computing'*
  
 ## Project
 Serverless Computing have shown advantages to efficiency and cost for data-intensive applications. Also training deep learning model can be data-intensive using compute and memory resources. I implemented deep learning workload using AWS Lambda in Amazon Web Service. 
